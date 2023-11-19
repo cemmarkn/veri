@@ -1,13 +1,19 @@
 
-Verilen dizi: [16, 21, 11, 8, 12, 22]
+1.Adım: 7 root olarak belirlenir.
 
-Adım: [16, 21, 11], [8, 12, 22] (Diziyi ikiye bölme)
-Adım: [16], [21, 11], [8], [12, 22] (Her bir alt diziyi tek elemana kadar bölme)
-Adım: [16], [11, 21], [8], [12, 22] (Alt dizileri sıralama ve birleştirme)
-Adım: [11, 16, 21], [8, 12, 22] (Tüm alt dizileri birleştirme)
+2.Adım: 5, 1, 8, 3, 6, 0, 9, 4, 2 sırasıyla 7'nin altına eklenir.
 
-Bu aşamalarda her adımda diziyi ikiye bölüyor, sonra bu parçaları sıralayarak birleştiriyoruz.
-Merge Sort, bu bölme ve birleştirme işlemlerini logaritmik bir zaman karmaşıklığı olan O(n log n) sürede gerçekleştirir.
+
+
+       7
+      / \
+     5   8
+    / |    \
+   1  6     9
+   |\
+   0 3
+     /\
+    2  4
 
 
 
